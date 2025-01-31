@@ -1,4 +1,4 @@
-
+#Falta fazer: review, historico, selecionar cadeira e promoções
 cinemas={
     "Centerplex": {
         "Movies":["1-High School Musical","2-De Volta Para O Futuro","3-Elvis"],
@@ -187,7 +187,7 @@ def login():
         print("Essa conta não existe! Por favor crie uma.")
         Creat_account()
 
-def escolha_inicial ():
+def initial_choice ():
     choose= int(input("Digite o número do que deseja fazer:\n1-Login\n2-Criar Conta\n"))
     if choose == 1:
         login()
@@ -195,8 +195,8 @@ def escolha_inicial ():
         Creat_account()
     else:
         print("Número inválido! Por favor digite novamente.")
-        escolha_inicial()
+        initial_choice()
 
 
-escolha_inicial()
+initial_choice()
 
